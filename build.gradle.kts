@@ -2,10 +2,10 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     application
-    kotlin("jvm") version "1.9.0"
+    kotlin("jvm") version "2.0.0"
     id("com.github.johnrengelman.shadow") version "7.1.2"
-    id("io.papermc.paperweight.userdev") version "1.5.5"
-    id("xyz.jpenilla.run-paper") version "2.1.0"
+    id("io.papermc.paperweight.userdev") version "1.7.1"
+    id("xyz.jpenilla.run-paper") version "2.3.0"
 }
 
 group = "com.example"
@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    paperweight.paperDevBundle("1.20.1-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("io.papermc.paper:dev-bundle:${property("minecraft_version")}-R0.1-SNAPSHOT")
 }
 
 tasks {
